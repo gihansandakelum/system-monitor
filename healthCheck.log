@@ -1,0 +1,114 @@
+******************************************************************************************************   
+[2022-09-13 19:23:03] Checking System Health                                                  [START]
+******************************************************************************************************   
+------------------------------------------------------------------------------------------------------   
+[2022-09-13 19:23:03] Finding System Information                                              [START]
+-----System Hostname : xxxxx-xxxx.xxxxx.com                                                       
+-----System IP(s) : 172.xxx.xxx.xx|172.xx.xxx.xx|192.xx.xx.x                                        
+-----Operating System: Red Hat Enterprise Linux Server 7.9 (Maipo)                                   
+-----Kernel Version : 3.10.0-1160.el7.x86_64                                                         
+-----System Uptime : up by 5 days hours                                                              
+-----Current Load Average : 0.18, 0.06, 0.06                                                         
+-----System Date : Tue 13 Sep 2022 07:23:03 PM +0530                                                 
+[2022-09-13 19:23:03] Finding System Information                                                [END]
+------------------------------------------------------------------------------------------------------   
+[2022-09-13 19:23:03] Checking for any read-only file systems                                 [START]
+-----Read-only file system not found                                                                 
+[2022-09-13 19:23:03] Checking for any read-only file systems                                   [END]
+------------------------------------------------------------------------------------------------------   
+[2022-09-13 19:23:03] Checking For Currently Mounted File Systems                             [START]
+/dev/mapper/rhel-root            on  /      type  xfs   (rw,relatime,attr2,inode64,noquota)
+/dev/mapper/VolGroup00-LogVol00  on  /apps  type  ext4  (rw,relatime,data=ordered)
+/dev/mapper/VolGroup00-LogVol01  on  /data  type  ext4  (rw,relatime,data=ordered)
+/dev/sda1                        on  /boot  type  xfs   (rw,relatime,attr2,inode64,noquota)                                                                                                                                                                                                                                                          
+[2022-09-13 19:23:03] Checking For Currently Mounted File Systems                               [END]
+------------------------------------------------------------------------------------------------------   
+[2022-09-13 19:23:03] Checking the Disk Usage On Mounted File Systems                         [START]
+( 0-85% = OK/HEALTHY,  85-95% = WARNING,  95-100% = CRITICAL )                                       
+/dev/sda1                        /boot  39%  ------  OK/HEALTHY
+/dev/mapper/VolGroup00-LogVol01  /data  42%  ------  OK/HEALTHY
+/dev/mapper/rhel-root            /      47%  ------  OK/HEALTHY
+/dev/mapper/VolGroup00-LogVol00  /apps  67%  ------  OK/HEALTHY                                                                                                                                                            
+[2022-09-13 19:23:03] Checking the Disk Usage On Mounted File Systems                           [END]
+------------------------------------------------------------------------------------------------------   
+[2022-09-13 19:23:03] Checking the INode Usage On Mounted File Systems                        [START]
+( 0-85% = OK/HEALTHY,  85-95% = WARNING,  95-100% = CRITICAL )                                       
+/dev/mapper/VolGroup00-LogVol00  /apps  1%  ------  OK/HEALTHY
+/dev/mapper/VolGroup00-LogVol01  /data  1%  ------  OK/HEALTHY
+/dev/sda1                        /boot  1%  ------  OK/HEALTHY                                                                                         
+[2022-09-13 19:23:03] Checking the INode Usage On Mounted File Systems                          [END]
+------------------------------------------------------------------------------------------------------   
+[2022-09-13 19:23:03] Checking System Memory Usage                                            [START]
+[2022-09-13 19:23:03] Memory Utilization                                                     [NORMAL]
+-----Total Physical Memory in MB : 15866                                                             
+-----Free Physical Memory in MB : 13001                                                              
+-----Total Swap Memory in MB : 2047                                                                  
+-----Free Swap Memory in MB : 2047                                                                   
+[2022-09-13 19:23:03] Checking System Memory Usage                                              [END]
+------------------------------------------------------------------------------------------------------   
+[2022-09-13 19:23:03] Checking System CPU Usage                                               [START]
+-----Total Number of CPUs : 16                                                                       
+[2022-09-13 19:23:07] CPU Utilization                                                        [NORMAL]
+-----System Idle CPU Presentage: 100%                                                                
+[2022-09-13 19:23:07] Checking System CPU Usage Process                                         [END]
+------------------------------------------------------------------------------------------------------   
+[2022-09-13 19:23:07] Checking Most Recent 3 Reboot Events                                    [START]
+reboot   system boot  3.10.0-1160.el7. Thu Sep  8 09:32 - 19:23 (5+09:50)                            
+[2022-09-13 19:23:07] Checking Most Recent 3 Reboot Events                                      [END]
+------------------------------------------------------------------------------------------------------   
+[2022-09-13 19:23:07] Checking Most Recent 3 Shutdown Events                                  [START]
+-----No shutdown events are recorded.                                                                
+[2022-09-13 19:23:07] Checking Most Recent 3 Shutdown Events                                    [END]
+------------------------------------------------------------------------------------------------------   
+[2022-09-13 19:23:07] Checking for Top 5 Hog Processes                                        [START]
+-----Top 5 Memory Resource Hog Processes:                                                            
+%MEM    PID   PPID USER     STAT COMMAND
+
+ 6.5   1698      1 mysql    Sl   /usr/sbin/mysqld --daemonize --pid-file=/var/run/mysqld/mysqld.pid
+
+ 0.3  73629      1 root     Sl   ./getcell64
+
+ 0.1    639      1 root     Ss   /usr/lib/systemd/systemd-journald
+
+ 0.1   1539      1 root     Ssl  /usr/bin/python2 -Es /usr/sbin/tuned -l -P
+
+ 0.1   1278      1 root     S    /usr/sbin/vmtoolsd                                                                                                                                                                                                                                                                                              
+-----Top 5 CPU Resource Hog Processes:                                                               
+%CPU    PID   PPID USER     STAT COMMAND
+
+ 1.3  73629      1 root     Sl   ./getcell64
+
+ 0.8   1698      1 mysql    Sl   /usr/sbin/mysqld --daemonize --pid-file=/var/run/mysqld/mysqld.pid
+
+ 0.2    958      1 root     Ssl  /usr/bin/vmtoolsd
+
+ 0.0      1      0 root     Ss   /usr/lib/systemd/systemd --switched-root --system --deserialize 22
+
+ 0.0      2      0 root     S    [kthreadd]                                                                                                                                                                                                                                                                                              
+[2022-09-13 19:23:07] Checking for Top 5 Hog Processes                                          [END]
+------------------------------------------------------------------------------------------------------   
+[2022-09-13 19:23:07] Checking for zombie processes                                           [START]
+-----Number of zombie process : 4                                                                    
+-----Details of each zombie processes found                                                          
+   PID   PPID USER     STAT COMMAND
+ 73521  73510 root     Z    [m3ua] <defunct>                     
+   PID   PPID USER     STAT COMMAND
+ 73522  73510 root     Z    [sccp] <defunct>                     
+   PID   PPID USER     STAT COMMAND
+ 73523  73510 root     Z    [tcap] <defunct>                     
+   PID   PPID USER     STAT COMMAND
+ 73525  73510 root     Z    [map2] <defunct>                     
+[2022-09-13 19:23:07] Checking for zombie processes                                             [END]
+------------------------------------------------------------------------------------------------------   
+[2022-09-13 19:23:07] Verifying Applications Running Status                                   [START]
+[2022-09-13 19:23:07] Running Status - app1 : 1698                                          [NORMAL]
+[2022-09-13 19:23:07] Running Status - app2 : 73510                                         [NORMAL]
+[2022-09-13 19:23:07] Verifying Applications Running Status                                     [END]
+------------------------------------------------------------------------------------------------------   
+[2022-09-13 19:23:07] Verifying Monitoring Application Running Status                         [START]
+[2022-09-13 19:23:07] Running Status - monitoringApp                                          [ERROR]
+[2022-09-13 19:23:07] Sending Monitoring Application Status Alarm Email Notification        [SUCCESS]
+[2022-09-13 19:23:07] Verifying Monitoring Applications Running Status                          [END]
+******************************************************************************************************   
+[2022-09-13 19:23:07] Checking System Health                                                    [END]
+******************************************************************************************************
